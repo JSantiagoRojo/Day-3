@@ -8,7 +8,7 @@ function tecnologias() {
 
     let respuesta = document.getElementById("respuesta").value;
 
-    if (respuesta === "Si" || "si" ) {
+    if (respuesta === "Si" || respuesta ==="si" ) {
 
     let continuar = true;
 
@@ -30,6 +30,11 @@ for (let i = 0; i < tecnologias.length; i++) {
     }
  });
 }
+
+function reiniciar () {
+    location.reload();
+}
+
 document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("Comenzar").addEventListener("click", function() {
@@ -60,6 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         this.style.display = "none";
 
+        document.getElementById("Reiniciar").style.display = "block";
+
+        document.getElementById("Reiniciar").addEventListener("click", function(){
+              reiniciar();
+        });
 
         document.getElementById("ElegirOpcion").addEventListener("click", function() {
 
