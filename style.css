@@ -130,3 +130,50 @@ body {
 .contenido_elecciones_texto{
     margin-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+
+    /* Reducir tamaños de fuente */
+    .header_contenido {
+        font-size: 1.8rem; /* más pequeño que en desktop */
+    }
+
+    .boton {
+        font-size: 1.2rem;
+        padding: 10px 20px; /* menos padding para que no se desborde */
+    }
+
+    .boton_ingresar {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .caja_input {
+        width: 180px; /* más estrecho para móviles */
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .contenido {
+        margin-top: 15px;
+        gap: 15px;
+        padding: 0 5%; /* Ajusta padding para pantallas pequeñas */
+    }
+
+    .contenido_primera_eleccion {
+        gap: 8px;
+        left: 5px; /* Si lo usas absoluto, ajusta posición al borde */
+        top: 80px; /* Baja un poco la posición si está absoluta */
+    }
+
+    .contenido_elecciones {
+        font-size: 1rem;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .contenido_elecciones_lista {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
