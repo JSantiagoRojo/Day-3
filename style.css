@@ -40,19 +40,9 @@ body {
     box-sizing: border-box;
 }
 
-.boton_comenzar{
-    /*display: flex;
-    padding: 10px 10px;
-    align-items: center;
-    background-color: var(--color-primario) ;
-    color :var(--color-secundario);
-    border-width: 3px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    font-size: 1.5rem;
-    
-    border-color: var(--color-terciario);*/
+.boton{
     font-family: "montserrat", sans-serif;
+    font-size: 1.5rem;
     padding: 12px 30px;
     border-radius: 25px;
     border: 2px solid var(--color-terciario);
@@ -63,18 +53,12 @@ body {
     cursor: pointer;
 }
 
-.boton_comenzar:hover{
+.boton:hover{
      background-color: var(--color-hover);
      transform: scale(1.05); 
 }
 
 .contenido{
-   /* border: 5px;
-    display: flex;
-    align-items: center;
-    padding: 25% 10%;
-    gap: 5%;
-    justify-content: center;*/
     display: flex;
     flex-direction: column;
     align-items: center; /* Todo centrado horizontalmente */
@@ -84,13 +68,6 @@ body {
 }
 
 .contenido_primera_eleccion{
-    /*display: flex;
-    align-items: start;
-    padding: 5% 15%;
-    justify-content: space-between;*/
-    position: absolute;      /* Lo saca del flujo */
-    top: 150px;              /* Ajusta según lo que necesites */
-    left: 40px;                 /* Pegado al borde izquierdo */
     display: flex;
     flex-direction: column;
     gap: 10px; 
@@ -111,45 +88,45 @@ body {
     border: 2px solid var(--color-terciario);
     border-radius: 10px;
     transition: all 0.3s ease;
-   /* border: 2px solid var(--color-terciario);
-    border-radius: 5px;*/
     font-size: 1rem;
 }
 
 .boton_ingresar{
-    display: flex;
-    padding: 5px 5px;
-    align-items: center;
-    background-color: var(--color-primario) ;
-    color :var(--color-secundario);
-    box-sizing: border-box;
-    border-radius: 8px;
-    border-width: 3px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-family: "montserrat", sans-serif;
-    border-color: var(--color-terciario);
-    transition: 0.3s ease;
+    background-color: var(--color-secundario);
     cursor: pointer;
-   
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--color-terciario);
+    transition: all 0.3s ease;
+    
 }
 
-
-.boton_iniciar{
-    display: flex;
-    padding: 10px 10px;
-    align-items: center;
-    background-color: var(--color-primario) ;
-    color :var(--color-secundario);
-    box-sizing: border-box;
-    border-radius: 8px;
-    border-width: 3px;
-    font-size: 1.5rem;
-    font-family: "montserrat", sans-serif;
-    border-color: var(--color-terciario);
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.boton_iniciar:hover{
+.boton_ingresar:hover{
      background-color: var(--color-hover);
      transform: scale(1.05); 
+}
+
+.contenido_elecciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Todo centrado horizontalmente */
+    gap: 25px; /* Espacio entre elementos */
+    margin-top: 30px;
+    position: relative;
+    font-size: var(--tamaño-fuente-1);
+    font-family: var(--fuente-krona);
+    color: var(--color-secundario);
+}
+
+.contenido_elecciones_lista{
+    background-color: var(--color-terciario);
+    border-radius: 15px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.contenido_elecciones_texto{
+    margin-top: 30px;
 }

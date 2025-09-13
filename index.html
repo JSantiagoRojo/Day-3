@@ -15,7 +15,7 @@
     </header>
 
     <main class="contenido">
-        <button class="boton_comenzar" id="Comenzar">Comenzar</button>
+        <button class="boton" id="Comenzar">Comenzar</button>
 
         <div class="contenido_primera_eleccion" id="formularioNombre" style="display:none">
             <label class="nombre" for="nombre">Nombre:</label>
@@ -23,42 +23,42 @@
             <button class="boton_ingresar" id="IngresarNombre">Ingresar</button>
         </div>
 
-        <button class="boton_iniciar" id="Iniciar"style="display:none">Iniciar</button>
+        <button class="boton" id="Iniciar"style="display:none">Iniciar</button>
 
-        <div id="Elecciones" style="display:none">
-            <p>1. Front-End</p> 
-            <p>2. Back-End</p> 
-            <p>Escribe el número de tu elección</p> 
+        <div class="contenido_elecciones" id="Elecciones" style="display:none">
+            <p class="contenido_elecciones_lista">1. Front-End</p> 
+            <p class="contenido_elecciones_lista">2. Back-End</p> 
+            <p class="contenido_elecciones_texto">Escribe el número de tu elección</p> 
             <label for="opcion">Elección:</label>
-            <input type="number" id="opcion">
-            <button id="ElegirOpcion">Elegir</button>
+            <input class="caja_input" type="number" id="opcion">
+            <button class="boton_ingresar" id="ElegirOpcion">Elegir</button>
         </div>
 
-        <div id="FrontEnd" style="display:none">
-            <p>1. React</p> 
-            <p>2. Vue</p> 
-            <p>Escribe el número de tu elección</p> 
+        <div class="contenido_elecciones" id="FrontEnd" style="display:none">
+            <p class="contenido_elecciones_lista">1. React</p> 
+            <p class="contenido_elecciones_lista">2. Vue</p> 
+            <p class="contenido_elecciones_texto">Escribe el número de tu elección</p> 
             <label for="opcion1">Elección:</label>
-            <input type="number" id="opcion1">
-            <button id="ElegirOpcionFront">Elegir</button>
+            <input class="caja_input" type="number" id="opcion1">
+            <button class="boton_ingresar" id="ElegirOpcionFront">Elegir</button>
         </div>
         
-            <div id="BackEnd" style="display:none">
-            <p>1. C#</p> 
-            <p>2. Java</p> 
+            <div class="contenido_elecciones" id="BackEnd" style="display:none">
+            <p class="contenido_elecciones_lista">1. C#</p> 
+            <p class="contenido_elecciones_lista">2. Java</p> 
             <label for="opcion2">Elección:</label>
-            <input type="number" id="opcion2">
-            <button id="ElegirOpcionBack">Elegir</button>
+            <input class="caja_input" type="number" id="opcion2">
+            <button class="boton_ingresar" id="ElegirOpcionBack">Elegir</button>
         </div>
 
-        <div id="Tecnologias" style="display:none">
-            <p>¿Deseas estudiar otra tecnologia?</p>
+        <div class="contenido_elecciones" id="Tecnologias" style="display:none">
+            <p class="contenido_elecciones_texto">¿Deseas estudiar otra tecnologia?</p>
             <label for="respuesta">Si o No:</label>
-            <input type="text" id="respuesta">
-            <button id="Agregar">Agregar</button>
+            <input class="caja_input" type="text" id="respuesta">
+            <button class="boton_ingresar" id="Agregar">Agregar</button>
         </div>
         
-        <button class="boton_reiniciar" id="Reiniciar"style="display:none">Reiniciar</button>
+        <button class="boton" id="Reiniciar"style="display:none">Reiniciar</button>
 
 </main>   
     <script src="app.js"></script>
